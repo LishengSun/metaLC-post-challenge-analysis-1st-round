@@ -14,7 +14,7 @@ verbose = True
 #=== Setup input/output directories
 root_dir = os.getcwd()
 default_input_dir = os.path.join(root_dir, "sample_data/")
-default_output_dir = os.path.join(root_dir, "output/")
+default_output_dir = os.path.join(root_dir, "output/topK_best_on_samples_agent")
 default_program_dir = os.path.join(root_dir, "ingestion_program/")
 default_submission_dir = os.path.join(root_dir, "sample_code_submission/")
 

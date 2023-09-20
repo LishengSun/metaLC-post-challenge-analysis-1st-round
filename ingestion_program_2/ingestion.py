@@ -202,7 +202,12 @@ if __name__ == "__main__":
 
     #=== Import the agent submitted by the participant
     path.append(submission_dir)
-    from ddqn_agent import Agent
+    # from ddqn_agent import Agent
+    from topK_best_on_samples_agent import Agent
+    agent_name = Agent.__module__.split(".")[-1]
+
+    # Define the directory name
+    output_dir += f"{agent_name}"
 
     #=== Clear old output
     clear_output_dir(output_dir)
