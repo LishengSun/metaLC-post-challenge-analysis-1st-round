@@ -157,7 +157,8 @@ class Agent():
 
         if len(self.models_to_be_run)==0:
    
-            next_A = self.get_A_star_random()
+            # next_A = self.get_A_star_random()
+            next_A = self.get_A_star_epsilon_greedy()
             # it's possible that some actions have time spent = 0
             if self.s[1,0,next_A] == 0:
                 # in this case, we increment the time by self.total_time_budget/50
@@ -188,6 +189,26 @@ class Agent():
         A_star = random.choice(best_algo)
         return A_star
         # return torch.argmax(self.s[0]).item()
+
+    def get_A_star_epsilon_greedy(self, epsilon=0.1):
+        # get top algo for each family
+        best_algo = []
+        for fam_i in [0,1,]:
+            best_algo.append(torch.argmax(self.s[0][(self.s[2] == fam_i)]).item() + fam_i *10)
+        # epsilon-greedy
+        p = np.random.random()
+        if p<epsilon:
+            A_star = random.choice(best_algo)
+        else:
+            A_star = torch.argmax(self.s[0]).item()
+        print('best_algo: ', best_algo)
+        print('best_algo R_val: ', [self.s[0][0][i] for i in best_algo])
+        print('epsilon-greedy p:', p)
+        print('A_star:', A_star)
+        return A_star
+
+
+ 
 
 
     def get_algo_family(self, A):
