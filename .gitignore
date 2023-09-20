@@ -1,0 +1,15 @@
+# Ignore system-specific files
+.DS_Store
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore compiled Python files
+__pycache__/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
