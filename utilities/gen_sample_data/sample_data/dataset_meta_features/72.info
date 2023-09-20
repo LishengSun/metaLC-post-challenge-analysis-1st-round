@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Samuel'
+task = 'regression'
+target_type = 'Categorical'
+feat_type = 'Mixed'
+metric = 'f1_metric'
+time_budget = 900
+feat_num = 85
+target_num = 10
+label_num = 2
+train_num = 15717
+valid_num = 87051
+test_num = 65645
+has_categorical = 0
+has_missing = 1
+is_sparse = 1

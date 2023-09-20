@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Cynthia'
+task = 'regression'
+target_type = 'Binary'
+feat_type = 'Mixed'
+metric = 'a_metric'
+time_budget = 1300
+feat_num = 42
+target_num = 8
+label_num = 6
+train_num = 35595
+valid_num = 65729
+test_num = 98870
+has_categorical = 0
+has_missing = 0
+is_sparse = 1

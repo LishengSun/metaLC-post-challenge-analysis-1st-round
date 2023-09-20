@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Eric'
+task = 'binary.classification'
+target_type = 'Numerical'
+feat_type = 'Binary'
+metric = 'pac_metric'
+time_budget = 1400
+feat_num = 78
+target_num = 5
+label_num = 5
+train_num = 5626
+valid_num = 60023
+test_num = 79920
+has_categorical = 0
+has_missing = 0
+is_sparse = 1

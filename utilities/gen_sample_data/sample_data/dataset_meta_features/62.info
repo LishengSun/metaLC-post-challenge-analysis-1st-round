@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Melody'
+task = 'multiclass.classification'
+target_type = 'Categorical'
+feat_type = 'Categorical'
+metric = 'pac_metric'
+time_budget = 1400
+feat_num = 46
+target_num = 6
+label_num = 3
+train_num = 17593
+valid_num = 93415
+test_num = 2020
+has_categorical = 0
+has_missing = 0
+is_sparse = 1

@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Erik'
+task = 'binary.classification'
+target_type = 'Binary'
+feat_type = 'Binary'
+metric = 'bac_metric'
+time_budget = 1000
+feat_num = 18
+target_num = 2
+label_num = 4
+train_num = 72213
+valid_num = 90608
+test_num = 72838
+has_categorical = 0
+has_missing = 1
+is_sparse = 0

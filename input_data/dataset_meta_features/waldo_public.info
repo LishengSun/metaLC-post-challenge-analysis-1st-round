@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'waldo'
+task = 'multiclass.classification'
+target_type = 'Categorical'
+feat_type = 'Mixed'
+metric = 'bac_metric'
+time_budget =  1200
+feat_num =   270
+target_num =     4
+label_num =     4
+train_num = 19439
+valid_num =  2430
+test_num =  2430
+has_categorical =     1
+has_missing =     0
+is_sparse =     0

@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'alexis'
+task = 'multilabel.classification'
+target_type = 'Binary'
+feat_type = 'Numerical'
+metric = 'auc_metric'
+feat_num =  5000
+target_num =    18
+label_num =    18
+train_num = 54491
+valid_num =  7784
+test_num = 15569
+has_categorical =     0
+has_missing =     0
+is_sparse =     1
+time_budget =  1200

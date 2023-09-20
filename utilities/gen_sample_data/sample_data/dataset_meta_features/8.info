@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Tammy'
+task = 'binary.classification'
+target_type = 'Categorical'
+feat_type = 'Categorical'
+metric = 'pac_metric'
+time_budget = 700
+feat_num = 22
+target_num = 6
+label_num = 4
+train_num = 8001
+valid_num = 80861
+test_num = 40755
+has_categorical = 0
+has_missing = 0
+is_sparse = 0

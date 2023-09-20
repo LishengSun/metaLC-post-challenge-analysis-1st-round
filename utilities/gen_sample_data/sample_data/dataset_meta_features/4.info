@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Jonathan'
+task = 'multilabel.classification'
+target_type = 'Binary'
+feat_type = 'Mixed'
+metric = 'bac_metric'
+time_budget = 700
+feat_num = 69
+target_num = 2
+label_num = 3
+train_num = 31968
+valid_num = 93748
+test_num = 19180
+has_categorical = 1
+has_missing = 1
+is_sparse = 1

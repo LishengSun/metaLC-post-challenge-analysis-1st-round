@@ -1,0 +1,68 @@
+title: Meta-learning from Learning Curves
+description: IEEE WCCI 2022 Competition on Meta-learning from Learning Curves
+start_date: 2022-01-06 00:00:00+00:00
+end_date: 2022-02-10 00:00:00+00:00
+competition_docker_image: codalab/codalab-legacy:py37
+image: logo.png
+has_registration: false
+force_submission_to_leaderboard: true
+disallow_leaderboard_modifying: true
+enable_detailed_results: true
+admin_names: guyon,lisheng,pavao,Ngrin
+html:
+  data: data.html
+  evaluation: evaluation.html
+  get_starting_kit: get_starting_kit.html
+  overview: overview.html
+  terms: terms.html
+phases:
+  0:
+    auto_migration: false
+    color: green
+    description: Participants can make many submissions. The submitted agent will
+      be evaluated on the validation sets. The validation scores will be shown on
+      the Development leaderboard.
+    ingestion_program: ingestion_program.zip
+    input_data: input_data.zip
+    is_scoring_only: false
+    label: Development
+    max_submissions: 100
+    max_submissions_per_day: 5
+    phasenumber: 1
+    public_data: sample_data.zip
+    reference_data: reference_data.zip
+    scoring_program: scoring_program.zip
+    start_date: 2022-01-06 00:00:00+00:00
+    starting_kit: starting_kit.zip
+  1:
+    auto_migration: true
+    color: purple
+    description: The last submission in the Development phase will be forwarded automatically
+      to this phase. It will be evaluated on the test sets. The test scores will be
+      shown on the Final leaderboard.
+    ingestion_program: ingestion_program.zip
+    input_data: input_data.zip
+    is_scoring_only: false
+    label: Final
+    max_submissions: 100
+    max_submissions_per_day: 5
+    phasenumber: 2
+    reference_data: reference_data.zip
+    scoring_program: scoring_program_2.zip
+    start_date: 2022-02-10 00:00:00+00:00
+leaderboard:
+  columns:
+    average_ALC:
+      label: Average ALC
+      leaderboard: &id001
+        label: Average Final Score
+        rank: 1
+      rank: 1
+      sort: desc
+    average_final_score:
+      label: Average Final Score
+      leaderboard: *id001
+      rank: 2
+      sort: desc
+  leaderboards:
+    Average Final Score: *id001

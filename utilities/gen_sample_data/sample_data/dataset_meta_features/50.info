@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Gerald'
+task = 'multiclass.classification'
+target_type = 'Numerical'
+feat_type = 'Mixed'
+metric = 'a_metric'
+time_budget = 1400
+feat_num = 47
+target_num = 3
+label_num = 9
+train_num = 13796
+valid_num = 44733
+test_num = 6804
+has_categorical = 0
+has_missing = 1
+is_sparse = 0

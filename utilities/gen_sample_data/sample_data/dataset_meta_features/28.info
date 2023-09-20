@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Deborah'
+task = 'multiclass.classification'
+target_type = 'Categorical'
+feat_type = 'Binary'
+metric = 'bac_metric'
+time_budget = 1200
+feat_num = 58
+target_num = 2
+label_num = 2
+train_num = 93375
+valid_num = 64720
+test_num = 9823
+has_categorical = 0
+has_missing = 1
+is_sparse = 0

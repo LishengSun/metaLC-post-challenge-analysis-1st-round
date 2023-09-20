@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Sherri'
+task = 'multilabel.classification'
+target_type = 'Binary'
+feat_type = 'Numerical'
+metric = 'auc_metric'
+time_budget = 1000
+feat_num = 94
+target_num = 7
+label_num = 8
+train_num = 29259
+valid_num = 73876
+test_num = 2875
+has_categorical = 1
+has_missing = 0
+is_sparse = 1

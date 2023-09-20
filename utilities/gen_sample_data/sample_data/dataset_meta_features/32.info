@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Sarah'
+task = 'regression'
+target_type = 'Categorical'
+feat_type = 'Binary'
+metric = 'f1_metric'
+time_budget = 1300
+feat_num = 36
+target_num = 10
+label_num = 9
+train_num = 31541
+valid_num = 10973
+test_num = 82815
+has_categorical = 0
+has_missing = 1
+is_sparse = 0

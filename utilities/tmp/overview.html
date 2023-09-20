@@ -1,0 +1,31 @@
+<h1>Meta-learning from Learning Curves</h1>
+<h5><strong>Competition Introduction</strong>:&nbsp;<a href="https://youtu.be/1rLc9Z0vRzw">https://youtu.be/1rLc9Z0vRzw</a></h5>
+<h5><strong>Medium article</strong>:&nbsp;<a href="https://medium.com/@hungnm.vnu/meta-learning-from-learning-curves-ieee-wcci-2022-competition-5e1932742644">https://medium.com/@hungnm.vnu/meta-learning-from-learning-curves-ieee-wcci-2022-competition-5e1932742644</a>&nbsp;</h5>
+<h5><strong>Updated Starting Kit (Jan 11):&nbsp;</strong></h5>
+<h5 class="p1"><a href="https://drive.google.com/drive/folders/1bEQLiSBkexNekJMoYqQBRGUVREoOM5iH?usp=sharing">https://drive.google.com/drive/folders/1bEQLiSBkexNekJMoYqQBRGUVREoOM5iH?usp=sharing</a></h5>
+<p style="text-align: center;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/pUhxkdtiQE8" frameborder="0" width="560" height="315"></iframe></p>
+<p>Artificial learning systems are good at learning to self-drive cars, to assist doctors to diagnose disease, to play video games, to recognize faces, to translate languages, but do poorly across many tasks. Recently, more effort has been put to recycle knowledge acquired by learning a task (e.g. recognizing objects), to learn faster and better a new task (e.g. recognizing faces), typically re-using or fine-tuning learned representations. BUT IS IT POSSIBLE TO LEARN-TO-LEARN? Namely develop meta-learning algorithms that learn means of finding the best or fastest learning algorithm, given a new task?</p>
+<p dir="ltr" align="justify"><span>Machine learning has solved with success many mono-task problems, but at the expense of long wasteful training times. Meta-learning promises to leverage the experience gained on previous tasks to train models faster, with fewer examples, and possibly better. Approaches include learning from algorithm evaluations, from task properties (or meta-features), and from prior models. We focus on meta-learning from algorithm evaluation.&nbsp;However, we consider multiple evaluations in the process of learning. Learning curves evaluate algorithm incremental performance improvement, as a function of training cycles (typically accounting for number of iterations over the training set or epochs, number of examples, or simply wall time).</span></p>
+<p dir="ltr" align="justify"><span><img style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto;" src="https://i.ibb.co/d23wpDD/Screenshot-2022-01-03-at-15-08-36.png" alt="learning_curves" width="457" height="269" /></span></p>
+<p style="text-align: center;" dir="ltr"><strong>Figure 1. The exploitation-exploration trade-offs in meta-learning from learning curves</strong></p>
+<p dir="ltr">The aim of this challenge is to design meta-learning agents that leverage learning curve information of partially trained algorithms, hence reducing the cost of training them to convergence.&nbsp;To facilitate benchmarking, we pre-computed learning curves as a function of time, but meta-learners must pay a cost emulating computational time for revealing their next values.&nbsp;Hence, meta-learners are expected to learn the exploitation vs. exploration trade-offs (Figure 1) between:</p>
+<p dir="ltr" align="justify">-&nbsp;<em>exploitation</em>&nbsp; = continuing &ldquo;training&rdquo; an already tried good candidate algorithm (requesting its next learning curve point) and&nbsp;</p>
+<p dir="ltr" align="justify">-&nbsp;<em>exploration</em>&nbsp;= checking new candidate algorithms (asking its first learning curve point).</p>
+<h3>Competition phases</h3>
+<p>We organize a novel two-phase competition protocol (Figure 2):</p>
+<ul>
+<li><strong>Development phase (5 weeks):</strong>&nbsp;participants submit agents that are meta-trained and meta-tested on the platform using validation set learning curves. The validation scores will be shown on the 'Development' leaderboard.</li>
+</ul>
+<ul>
+<li><strong>Final phase (1 week):</strong>&nbsp;no further submissions are made in this phase. Your last submission in the Development phase will be forwarded automatically to this phase. It will be evaluated on test learning curves, using its prescription made with only the knowledge of partially revealed validation curves, following its policy. The test scores will be shown on the 'Final' leaderboard.</li>
+</ul>
+<p><img style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto;" src="https://i.ibb.co/WBpch5j/Screenshot-2022-01-03-at-15-09-24.png" alt="" width="377" height="245" /></p>
+<p style="text-align: center;" dir="ltr" align="justify"><strong>Figure 2. Two-phase competition&nbsp;protocol</strong></p>
+<p dir="ltr" align="justify"><span><span>For more information, please click the 'Phases' tab.</span></span></p>
+<p style="text-align: center;" dir="ltr" align="justify">------------------------------------</p>
+<p dir="ltr" align="justify"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.ibb.co/N65gNby/Screenshot-2022-01-03-at-17-27-16.png" alt="" width="207" height="141" /></p>
+<p style="text-align: center;" dir="ltr" align="justify"><strong>Figure 3. Prizes&nbsp;sponsored by Chalearn</strong></p>
+<h2 dir="ltr"><span>Who are we?</span></h2>
+<p dir="ltr"><span>This competition is organized by: </span><strong>Manh Hung Nguyen, Isabelle Guyon, Lisheng Sun-Hosoya, Nathan Grinsztajn, and Adrien Pavao </strong>(Universit&eacute; Paris-Saclay and INRIA, France; and ChaLearn, USA).</p>
+<p dir="ltr"><span>The competition is hosted on <strong>Codalab</strong> and</span>&nbsp;supported by <strong>ChaLearn</strong>, <strong>Google</strong>, and the <strong>ANR</strong> (Agence Nationale de la Recherche, National Agency for Research) under <a href="https://anr.fr/Project-ANR-19-CHIA-0022">AI chair of excellence <strong>HUMANIA</strong>, grant number ANR-19-CHIA-0022</a>.</p>
+<p dir="ltr">For help, preferably use the forum, or <a href="mailto:meta-lc@chalearn.org">contact us</a>.</p>

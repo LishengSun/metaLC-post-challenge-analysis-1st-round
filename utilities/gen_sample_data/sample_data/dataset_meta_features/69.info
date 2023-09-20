@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Troy'
+task = 'multiclass.classification'
+target_type = 'Binary'
+feat_type = 'Binary'
+metric = 'r2_metric'
+time_budget = 1100
+feat_num = 72
+target_num = 3
+label_num = 6
+train_num = 45586
+valid_num = 13917
+test_num = 10087
+has_categorical = 1
+has_missing = 1
+is_sparse = 1

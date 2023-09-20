@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Rachel'
+task = 'regression'
+target_type = 'Categorical'
+feat_type = 'Numerical'
+metric = 'pac_metric'
+time_budget = 1100
+feat_num = 92
+target_num = 1
+label_num = 5
+train_num = 41422
+valid_num = 28466
+test_num = 29899
+has_categorical = 0
+has_missing = 0
+is_sparse = 0

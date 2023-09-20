@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'marco'
+task = 'multilabel.classification'
+target_type = 'Categorical'
+feat_type = 'Numerical'
+metric = 'auc_metric'
+time_budget =  1200
+feat_num = 15299
+target_num =   180
+label_num =   180
+train_num = 163860
+valid_num = 20482
+test_num = 20482
+has_categorical =     0
+has_missing =     0
+is_sparse =     1

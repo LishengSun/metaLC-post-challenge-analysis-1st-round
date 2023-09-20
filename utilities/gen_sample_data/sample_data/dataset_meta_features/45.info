@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Ronald'
+task = 'regression'
+target_type = 'Numerical'
+feat_type = 'Mixed'
+metric = 'pac_metric'
+time_budget = 800
+feat_num = 17
+target_num = 1
+label_num = 3
+train_num = 58649
+valid_num = 1531
+test_num = 68047
+has_categorical = 0
+has_missing = 1
+is_sparse = 0

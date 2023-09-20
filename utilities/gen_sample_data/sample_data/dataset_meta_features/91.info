@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Barbara'
+task = 'multilabel.classification'
+target_type = 'Binary'
+feat_type = 'Binary'
+metric = 'a_metric'
+time_budget = 700
+feat_num = 80
+target_num = 3
+label_num = 7
+train_num = 3501
+valid_num = 12195
+test_num = 85007
+has_categorical = 0
+has_missing = 0
+is_sparse = 1

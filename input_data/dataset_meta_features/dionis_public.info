@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'dionis'
+task = 'multiclass.classification'
+target_type = 'Categorical'
+feat_type = 'Numerical'
+metric = 'bac_metric'
+feat_num =    60
+time_budget =  1200
+target_num =   355
+label_num =   355
+train_num = 416188
+valid_num =  6000
+test_num = 12000
+has_categorical =     0
+has_missing =     0
+is_sparse =     0

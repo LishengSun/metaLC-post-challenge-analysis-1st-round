@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'pablo'
+task = 'regression'
+target_type = 'Numerical'
+feat_type = 'Numerical'
+metric = 'a_metric'
+time_budget =  1200
+feat_num =   120
+target_num =     1
+label_num =     0
+train_num = 188524
+valid_num = 23565
+test_num = 23565
+has_categorical =     0
+has_missing =     0
+is_sparse =     0

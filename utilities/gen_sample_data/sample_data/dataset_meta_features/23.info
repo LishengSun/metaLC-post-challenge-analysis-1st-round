@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'John'
+task = 'binary.classification'
+target_type = 'Binary'
+feat_type = 'Mixed'
+metric = 'pac_metric'
+time_budget = 700
+feat_num = 39
+target_num = 5
+label_num = 5
+train_num = 6665
+valid_num = 12740
+test_num = 57903
+has_categorical = 1
+has_missing = 0
+is_sparse = 1

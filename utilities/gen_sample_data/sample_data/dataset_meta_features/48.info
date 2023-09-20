@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Dustin'
+task = 'multilabel.classification'
+target_type = 'Binary'
+feat_type = 'Numerical'
+metric = 'bac_metric'
+time_budget = 600
+feat_num = 81
+target_num = 5
+label_num = 4
+train_num = 62869
+valid_num = 4387
+test_num = 57319
+has_categorical = 0
+has_missing = 0
+is_sparse = 0

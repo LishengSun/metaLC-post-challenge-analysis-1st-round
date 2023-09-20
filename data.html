@@ -1,0 +1,42 @@
+<h1>Meta-learning from Learning Curves: Data</h1>
+<p><strong>STARTING KIT</strong></p>
+<p class="p1">Please download the updated starting kit to develop your agent (meta-learner):<span class="Apple-converted-space">&nbsp;</span></p>
+<p class="p3"><a href="https://drive.google.com/drive/folders/1bEQLiSBkexNekJMoYqQBRGUVREoOM5iH?usp=sharing">https://drive.google.com/drive/folders/1bEQLiSBkexNekJMoYqQBRGUVREoOM5iH?usp=sharing</a>&nbsp;</p>
+<p>&nbsp;</p>
+<p>In the&nbsp;<strong>sample_code_submission/</strong>&nbsp;folder, you will implement an agent (agent.py)&nbsp;that includes 2 important methods:</p>
+<p>(1) meta_train(): returns agent trained from meta-training tasks, and</p>
+<p>(2) suggest(): to be used at meta-test time, returns suggestions both of the best current algorithm, and of which algorithm&rsquo;s learning curve to further explore next.</p>
+<p>In the&nbsp;<strong>ingestion_program/</strong>&nbsp;folder, the organizers provide an &ldquo;environment&rdquo; (environment.py), holding all learning curves, with a method &ldquo;reveal&rdquo; returning an observation upon receiving a suggestion. The execution of a task consists in repeating the following RL-style steps, until time is out:</p>
+<p><em>suggestion = agent.suggest(observation)</em><br /><em>observation = environment.reveal(suggestion)</em></p>
+<p>Detailed instructions for developing and testing a meta-learner can be found in the&nbsp;<strong>README</strong>&nbsp;file inside the starting kit.</p>
+<p>&nbsp;</p>
+<p><strong>SAMPLE DATA</strong></p>
+<p>We also provide sample data (SYNTHETIC learning curves of 20 algorithms on 100 datasets) which can be found in the starting kit or downloaded from the "Files" tab. This data is used for DEVELOPMENT ONLY, and NOT included in the data used for TESTING and RANKING participants.</p>
+<p><em>NOTE: Performing well on the sample (synthetic) data does <strong>NOT</strong> guarantee your agent will perform well on the real data used for testing and ranking in our competition.</em></p>
+<p>&nbsp;</p>
+<p><strong>CHALLENGE DATA</strong></p>
+<p><span id="docs-internal-guid-c13b9bc6-7fff-698c-276e-ddff5ef07336">A novel meta-dataset of pre-computed learning curves of 20 algorithms with different hyperparameters on 30 datasets used in the AutoML challenge. We added meta-features of datasets and hyperparameters of algorithms. We respected the data split of the AutoML challenge to produce two sets of learning curves for each task, from the validation and test sets</span>. In the AutoML challenge, the algorithms are asked to regularly produce intermediate results by making predictions on both validation set and test set to make learning curves. The times where the predictions were made were chosen by the algorithms themselves.</p>
+<p class="p1">DATASET META-FEATURES</p>
+<ul class="ul1">
+<li class="li1">usage = 'AutoML challenge 2014'</li>
+<li class="li1">name = name of the dataset</li>
+<li class="li1">task = &rsquo;binary.classification&rsquo;, &rsquo;multiclass.classification&rsquo;, &rsquo;multilabel.classification&rsquo;, &rsquo;regression&rsquo;</li>
+<li class="li1">target_type = &rsquo;Binary&rsquo;, &rsquo;Categorical&rsquo;, &rsquo;Numerical&rsquo;</li>
+<li class="li1"><span>feat_type = 'Binary', 'Categorical', 'Numerical', 'Mixed'</span></li>
+<li class="li1">metric = &rsquo;bac_metric&rsquo;, &rsquo;auc_metric&rsquo;, &rsquo;f1_metric&rsquo;, &rsquo;pac_metric&rsquo;, &rsquo;a_metric&rsquo;, &rsquo;r2_metric&rsquo;</li>
+<li class="li1">time_budget = total time budget for running algorithms on the dataset</li>
+<li class="li1">feat_num = number of features</li>
+<li class="li1">target_num = number of columns of target file (one, except for multi-label problems)</li>
+<li class="li1">label_num = number of labels (number of unique values of the targets)</li>
+<li class="li1">train_num = number of training examples</li>
+<li class="li1">valid_num = number of validation examples</li>
+<li class="li1">test_num = number of test examples</li>
+<li class="li1">has_categorical = whether there are categorical variable (yes=1, no=0)</li>
+<li class="li1">has_missing = whether there are missing values (yes=1, no=0)</li>
+<li class="li1">is_sparse = whether this is a sparse dataset (yes=1, no=0)</li>
+</ul>
+<p class="p1">ALGORITHM META-FEATURES</p>
+<ul class="ul1">
+<li class="li1">meta_feature_0 = 1 or 0</li>
+<li class="li1">meta_feature_1 = 0.1, 0.2, 0.3,&hellip;, 1.0</li>
+</ul>

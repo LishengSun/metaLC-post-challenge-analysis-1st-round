@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Elizabeth'
+task = 'binary.classification'
+target_type = 'Binary'
+feat_type = 'Categorical'
+metric = 'f1_metric'
+time_budget = 1100
+feat_num = 39
+target_num = 3
+label_num = 3
+train_num = 61565
+valid_num = 76916
+test_num = 39785
+has_categorical = 0
+has_missing = 0
+is_sparse = 0

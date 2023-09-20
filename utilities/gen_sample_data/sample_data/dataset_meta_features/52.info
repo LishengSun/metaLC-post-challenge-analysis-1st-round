@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Austin'
+task = 'binary.classification'
+target_type = 'Binary'
+feat_type = 'Mixed'
+metric = 'f1_metric'
+time_budget = 1300
+feat_num = 33
+target_num = 7
+label_num = 5
+train_num = 5820
+valid_num = 64776
+test_num = 86621
+has_categorical = 0
+has_missing = 0
+is_sparse = 1

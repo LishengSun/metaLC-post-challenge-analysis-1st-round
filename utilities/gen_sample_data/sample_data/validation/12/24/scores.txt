@@ -1,0 +1,3 @@
+training_data_sizes: [0.1]
+times: [806.27]
+scores: [0.36194740712860124]

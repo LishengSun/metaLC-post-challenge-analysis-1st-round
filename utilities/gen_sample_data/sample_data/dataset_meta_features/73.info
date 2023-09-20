@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Thomas'
+task = 'regression'
+target_type = 'Binary'
+feat_type = 'Binary'
+metric = 'pac_metric'
+time_budget = 600
+feat_num = 39
+target_num = 7
+label_num = 6
+train_num = 434
+valid_num = 47054
+test_num = 40710
+has_categorical = 1
+has_missing = 1
+is_sparse = 0

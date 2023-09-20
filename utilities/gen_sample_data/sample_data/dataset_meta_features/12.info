@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Wendy'
+task = 'regression'
+target_type = 'Categorical'
+feat_type = 'Mixed'
+metric = 'a_metric'
+time_budget = 800
+feat_num = 4
+target_num = 2
+label_num = 6
+train_num = 25433
+valid_num = 60538
+test_num = 58608
+has_categorical = 1
+has_missing = 1
+is_sparse = 0

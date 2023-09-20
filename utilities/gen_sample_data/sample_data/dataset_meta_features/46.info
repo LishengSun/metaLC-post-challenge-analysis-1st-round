@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Barry'
+task = 'regression'
+target_type = 'Binary'
+feat_type = 'Categorical'
+metric = 'pac_metric'
+time_budget = 1300
+feat_num = 77
+target_num = 7
+label_num = 9
+train_num = 1871
+valid_num = 16101
+test_num = 54185
+has_categorical = 0
+has_missing = 0
+is_sparse = 0

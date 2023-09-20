@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Manuel'
+task = 'regression'
+target_type = 'Binary'
+feat_type = 'Binary'
+metric = 'pac_metric'
+time_budget = 1000
+feat_num = 55
+target_num = 9
+label_num = 6
+train_num = 57558
+valid_num = 80545
+test_num = 79984
+has_categorical = 0
+has_missing = 0
+is_sparse = 1

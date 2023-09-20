@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Maxwell'
+task = 'regression'
+target_type = 'Numerical'
+feat_type = 'Mixed'
+metric = 'r2_metric'
+time_budget = 1000
+feat_num = 74
+target_num = 4
+label_num = 6
+train_num = 95818
+valid_num = 90344
+test_num = 29779
+has_categorical = 1
+has_missing = 1
+is_sparse = 0

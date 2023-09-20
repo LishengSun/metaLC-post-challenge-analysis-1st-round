@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Todd'
+task = 'binary.classification'
+target_type = 'Categorical'
+feat_type = 'Mixed'
+metric = 'auc_metric'
+time_budget = 1100
+feat_num = 13
+target_num = 6
+label_num = 9
+train_num = 37730
+valid_num = 72306
+test_num = 41245
+has_categorical = 1
+has_missing = 1
+is_sparse = 1

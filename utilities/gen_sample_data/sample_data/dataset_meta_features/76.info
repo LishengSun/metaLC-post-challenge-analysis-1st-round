@@ -1,0 +1,16 @@
+usage = 'AutoML challenge 2014'
+name = 'Jason'
+task = 'multiclass.classification'
+target_type = 'Categorical'
+feat_type = 'Categorical'
+metric = 'r2_metric'
+time_budget = 900
+feat_num = 55
+target_num = 5
+label_num = 8
+train_num = 2129
+valid_num = 38555
+test_num = 17434
+has_categorical = 1
+has_missing = 1
+is_sparse = 0
