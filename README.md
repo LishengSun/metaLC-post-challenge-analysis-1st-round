@@ -13,7 +13,7 @@ All agents name can be found in **sample_code_submission**
 ### Step 3: Run ingestion program: `python ingestion_program_2/ingestion.py`
 
 ### Step 4: Run scoring program with results from Step 3: `python scoring_program_2/score.py`
-As the results for different agents are stored in output/agent_name/ after Step 3, you should modify the following line in **ingestion_program_2/ingestion.py**:
+As the results for different agents are stored in output/agent_name/ after Step 3, you should modify the following line in **scoring_program_2/score.py**:
 
 For example:
 
